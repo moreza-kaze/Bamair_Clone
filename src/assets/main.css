@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: "peyda-regular";
+  src: url('./peyda-regular.woff');
+}
+@tailwind utilities;
