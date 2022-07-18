@@ -1,13 +1,14 @@
 <script setup>
-import MobileSidebar from './MobileSidebar.vue';</script>
+import MobileSidebar from "./MobileSidebar.vue";
+</script>
 <template>
   <div class="relative h-full w-full bg-[#000000a6]">
-    <div class="w-2/6 h-full max-w-xs bg-white">
+    <div class="w-4/6 h-full max-w-xs bg-white">
       <MobileSidebar />
     </div>
     <div
       @click="$emit('emitMenu', true)"
-      class="absolute top-0 left-0 h-full w-4/6"
+      class="absolute top-0 left-0 h-full w-2/6"
     >
       <span
         class="absolute top-10 left-14 w-10 h-10 bg-gray-500 rounded-xl flex justify-center items-center text-white cursor-pointer"

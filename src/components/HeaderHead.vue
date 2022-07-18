@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import MobileNavbar from "./MobileNavbar.vue";
+import MobileNavbar from "./mobile/MobileNavbar.vue";
 const menu = ref(true);
 
 function updatmenu(x) {
@@ -9,7 +9,7 @@ function updatmenu(x) {
 </script>
 <template>
   <div
-    class="h-16 lg:h-20 relative flex flex-row items-center justify-between xl:px-10 py-5 bg-[#f3f4f2] z-10"
+    class="h-16 lg:h-20 relative flex flex-row items-center justify-between lg:px-10 py-5 bg-[#f3f4f2] z-10"
   >
     <nav class="block">
       <ul class="hidden lg:flex flex-row">
@@ -19,7 +19,7 @@ function updatmenu(x) {
       </ul>
       <ul class="flex lg:hidden px-5">
         <li
-        class="cursor-pointer"
+          class="cursor-pointer"
           @click="
             {
               menu = !menu;
@@ -85,7 +85,7 @@ function updatmenu(x) {
     </div>
     <section
       :class="[{ hidden: menu }]"
-      class="min-h-screen h-full w-full fixed top-0 right-0 transition-all z-20"
+      class="min-h-screen lg:hidden h-full w-full fixed top-0 right-0 transition-all z-20"
     >
       <MobileNavbar :menu="menu" @emit-menu="updatmenu" />
     </section>
