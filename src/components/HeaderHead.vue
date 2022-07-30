@@ -13,9 +13,9 @@ function updatmenu(x) {
   >
     <nav class="block">
       <ul class="hidden lg:flex flex-row">
-        <li class="font-extrabold mr-5">خودرو</li>
-        <li class="font-extrabold mr-5">موتور سیکلت</li>
-        <li class="font-extrabold mr-5">باما</li>
+        <li class="font-extrabold mr-5 cursor-pointer">خودرو</li>
+        <li class="font-extrabold mr-5 cursor-pointer">موتور سیکلت</li>
+        <li class="font-extrabold mr-5 cursor-pointer">باما</li>
       </ul>
       <ul class="flex lg:hidden px-5">
         <li
@@ -43,7 +43,7 @@ function updatmenu(x) {
         </li>
       </ul>
     </nav>
-    <div class="flex flex-row justify-center items-center">
+    <div class="flex flex-row justify-center items-center cursor-pointer">
       <div class="ml-4 hidden lg:inline">
         <span
           ><svg
@@ -80,12 +80,12 @@ function updatmenu(x) {
               d="M12 4v16m8-8H4"
             /></svg
         ></span>
-        <span class="font-bold text-black px-2">ثبت آگهی</span>
+        <span class="font-bold text-black px-2 cursor-pointer">ثبت آگهی</span>
       </a>
     </div>
     <section
       :class="[{ hidden: menu }]"
-      class="min-h-screen lg:hidden h-full w-full fixed top-0 right-0 transition-all z-20"
+      class="min-h-screen lg:hidden h-full w-full fixed top-0 right-0 transition-all cursor-pointer z-20"
     >
       <MobileNavbar :menu="menu" @emit-menu="updatmenu" />
     </section>

@@ -17,7 +17,7 @@ const category = ref(false);
           }
         "
         :class="[{ 'text-white bg-black': !category }]"
-        class="w-1/2 h-full flex flex-row items-center justify-center rounded-3xl font-extrabold"
+        class="w-1/2 h-full flex flex-row items-center justify-center rounded-3xl cursor-pointer"
         >خودرو</span
       >
       <span
@@ -27,7 +27,7 @@ const category = ref(false);
           }
         "
         :class="[{ 'text-white bg-black': category }]"
-        class="w-1/2 h-full flex flex-row items-center justify-center rounded-3xl"
+        class="w-1/2 h-full flex flex-row items-center justify-center rounded-3xl cursor-pointer"
         >موتور سیکلت</span
       >
     </div>
@@ -38,7 +38,7 @@ const category = ref(false);
     <div class="absolute bottom-0 w-full py-5 px-2">
       <div class="w-full h-14 pl-7 mb-4">
         <a
-          class="w-full h-full border-solid border-2 border-gray-200 rounded-full flex flex-row items-center justify-between px-5"
+          class="w-full h-full border-solid border-2 border-gray-200 rounded-full flex flex-row items-center justify-between px-5 cursor-pointer"
         >
           <span
             ><svg
@@ -60,7 +60,7 @@ const category = ref(false);
       </div>
       <div class="w-full h-14 pl-7">
         <a
-          class="w-full h-full bg-bamaIr flex flex-row justify-around items-center py-4 px-9 rounded-full"
+          class="w-full h-full bg-bamaIr flex flex-row justify-around items-center py-4 px-9 rounded-full cursor-pointer"
           ><span
             ><svg
               xmlns="http://www.w3.org/2000/svg"

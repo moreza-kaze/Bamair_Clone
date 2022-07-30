@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="h-40 lg:h-48 flex flex-row justify-center items-center py-10">
+  <div class="h-full flex flex-row justify-center items-center">
     <svg
       viewBox="0 0 81 65"
       fill="none"
